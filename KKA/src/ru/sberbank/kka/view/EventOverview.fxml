@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.effect.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane centerShape="false" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="600.0" prefWidth="400.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ru.sberbank.kka.view.EventOverviewController">
+   <children>
+      <TableView fx:id="eventTable" layoutX="118.0" layoutY="29.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="50.0">
+        <columns>
+          <TableColumn fx:id="pkIdColumn" prefWidth="40.0" text="ID" />
+          <TableColumn fx:id="eventDateColumn" prefWidth="190.0" text="Дата события" />
+            <TableColumn fx:id="usernameColumn" prefWidth="75.0" text="Пользователь" />
+            <TableColumn fx:id="eventLevelColumn" prefWidth="75.0" text="Уровень события" />
+            <TableColumn fx:id="classifierColumn" prefWidth="75.0" text="Классификатор" />
+            <TableColumn fx:id="messageColumn" prefWidth="75.0" text="Сообщение" />
+            <TableColumn fx:id="revisionColumn" prefWidth="75.0" text="Ревизия" />
+            <TableColumn fx:id="businessLineColumn" prefWidth="75.0" text="Бизнес-линия" />
+        </columns>
+         <columnResizePolicy>
+            <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+         </columnResizePolicy>
+      </TableView>
+      <DatePicker fx:id="eventDatePicker" layoutX="110.0" layoutY="14.0" />
+      <Label layoutX="14.0" layoutY="14.0" prefHeight="25.0" prefWidth="97.0" text="Фильтр по дате :" />
+      <Button fx:id="eventRefreshBtn" layoutX="300.0" layoutY="14.0" mnemonicParsing="false" text="Refresh table" />
+   </children>
+</AnchorPane>

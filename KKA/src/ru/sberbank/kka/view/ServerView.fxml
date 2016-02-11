@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.VBox?>
+
+
+<VBox fx:id="srvVBox" prefHeight="60.0" prefWidth="600.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8" fx:controller="ru.sberbank.kka.view.ServerViewController">
+   <children>
+      <Separator prefHeight="1.0" prefWidth="600.0" valignment="TOP" VBox.vgrow="NEVER" />
+      <HBox fx:id="srvHBox" alignment="CENTER_LEFT" maxHeight="-Infinity" minHeight="-Infinity" prefHeight="30.0" prefWidth="550.0" spacing="5.0">
+         <children>
+            <Button fx:id="srvRefreshBtn" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="25.0" prefWidth="55.0" text="refresh" />
+            <Label fx:id="srvName" text="ServerName">
+               <font>
+                  <Font name="Arial Bold" size="16.0" />
+               </font>
+            </Label>
+         </children>
+         <padding>
+            <Insets left="5.0" />
+         </padding>
+      </HBox>
+      <Separator prefWidth="200.0" />
+   </children>
+</VBox>

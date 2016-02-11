@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE properties SYSTEM "http://java.sun.com/dtd/properties.dtd">
+<properties>
+<entry key="DBuser"></entry>
+<entry key="DBpass"></entry>
+<entry key="DBconn">jdbc:oracle:thin:@host:port:ssid</entry>
+<entry key="servers">
+server1;
+server2;
+</entry>
+<entry key="services">
+Service1;
+Service2;
+</entry>
+</properties>
